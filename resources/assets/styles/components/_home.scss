@@ -1,0 +1,149 @@
+section.home {
+    background-color: $colordark;
+    padding: 0;
+    height: 100vh;
+    min-height: 100vh;
+    position: relative;
+    .intro {
+        margin: auto;
+        max-width: 540px;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        h1 {
+            color: #FFF;
+            font-size: 36px;
+        }
+        >span {
+            color: #FFF;
+            font-size: 16px;
+        }
+    }
+}
+
+.social-icon {
+    li {
+        a {
+            color: white;
+            font-size: 21px;
+        }
+        a:hover {
+            color: $coloryellow;
+        }
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+}
+
+
+@-webkit-keyframes ani-mouse {
+	0% {
+		top: 29%;
+	}
+	15% {
+		top: 50%;
+	}
+	50% {
+		top: 50%;
+	}
+	100% {
+		top: 29%;
+	}
+}
+@-moz-keyframes ani-mouse {
+	0% {
+		top: 29%;
+	}
+	15% {
+		top: 50%;
+	}
+	50% {
+		top: 50%;
+	}
+	100% {
+		top: 29%;
+	}
+}
+@keyframes ani-mouse {
+	0% {
+		top: 29%;
+	}
+	15% {
+		top: 50%;
+	}
+	50% {
+		top: 50%;
+	}
+	100% {
+		top: 29%;
+	}
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.mouse-wrapper {
+    color: #FFF;
+    font-size: 14px;
+    display: block;
+    max-width: 100px;
+    margin: auto;
+    text-align: center;
+    &:hover {
+        color: white !important;
+    }
+    > span {
+        font-size: 14px !important;
+    }
+}
+.mouse {
+    border: solid 2px #FFF;
+    border-radius: 16px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    height: 26px;
+    position: relative;
+    width: 20px;
+    .wheel {
+        background: #FFF;
+        border-radius: 100%;
+        display: block;
+        position: absolute;
+        top: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 4px;
+        width: 4px;
+        -webkit-animation: ani-mouse 2s linear infinite;
+        -moz-animation: ani-mouse 2s linear infinite;
+        animation: ani-mouse 2s linear infinite;
+    }
+}
+
+.service-box {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    img {
+        margin-bottom: 20px;
+        height: 80px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+}

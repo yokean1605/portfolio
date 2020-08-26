@@ -1,0 +1,28 @@
+.skill-item {
+    .skill-info {
+        h4 {
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+}
+
+.item-real {
+    .icon {
+        float: left;
+        color: #dedeea;
+        font-size: 36px;
+    }
+    .details {
+        margin-left: 60px;
+    }
+    .number {
+        font-size: 30px;
+        em {
+            font-style: normal;
+        }
+    }
+    p {
+        font-size: 16px;
+    }
+}

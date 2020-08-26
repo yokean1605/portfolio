@@ -1,0 +1,122 @@
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-top: 20px;
+}
+main.content {
+    margin-left: 290px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+a {
+    color: $colorpink;
+    outline: 0;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        color: $colordark;
+        text-decoration: none;
+    }
+    &:focus {
+        outline: 0;
+    }
+}
+
+section {
+    padding-top: 80px;
+    position: relative;
+    min-height: 100vh;
+    .section-title {
+        font-size: 36px;
+        margin: 0;
+        margin-left: 14px;
+        position: relative;
+        &::before {
+            content: "";
+            background-image: url(../../../../dist/images/dots-bg.svg);
+            display: block;
+            height: 37px;
+            top: -14px;
+            position: absolute;
+            width: 37px;
+        }
+    }
+}
+
+.timeline {
+    position: relative;
+    &.edu > .timeline-container::after {
+        content: '\e019';
+        background: #FFF;
+        font-family: 'simple-line-icons';
+        font-size: 24px;
+        color: $colorpink;
+        position: absolute;
+        left: -7px;
+        top: 0;
+        z-index: 999;
+    }
+    &.exp > .timeline-container::after{
+        content: "\e04b";
+        background: #FFF;
+        font-family: "simple-line-icons";
+        font-size: 24px;
+        color: #FF4C60;
+        position: absolute;
+        left: -7px;
+        top: 0;
+        z-index: 999;
+    }
+    .timeline-container {
+        padding-left: 50px;
+        position: relative;
+        background-color: white;
+        width: 100%;
+        &:not(:last-of-type) {
+            margin-bottom: 50px;
+        }
+    }
+    .content {
+        position: relative;
+        span {
+            color: #8B88B1;
+            font-size: 14px;
+        }
+        h3 {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+        p {
+            margin-bottom: 0px;
+        }
+    }
+    span.line {
+        position: absolute;
+        width: 1px;
+        background-color: #FF4C60;
+        top: 30px;
+        bottom: 30px;
+        left: 34px;
+        z-index: 0;
+    }
+}
+
+.portfolio-filter {
+    margin-bottom: 25px;
+    li:not(:last-child) {
+        margin-right: 1.8rem;
+    }
+    li.current {
+        color: #FF4C60;
+    }
+    li {
+        color: #5E5C7F;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 700;
+        position: relative;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+}

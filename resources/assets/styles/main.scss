@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import "common/variable";
+
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/simple-line-icons/scss/simple-line-icons";
+// @import "node_modules/animate.css/animate";
+@import "/node_modules/wow.js/css/libs/animate.css";
+@import "node_modules/morphext/dist/morphext";
+@import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "node_modules/@fortawesome/fontawesome-free/scss/brands";
+@import "node_modules/@fortawesome/fontawesome-free/scss/regular";
+@import "node_modules/@fortawesome/fontawesome-free/scss/solid";
+
+@import "common/global";
+@import "common/element";
+@import "components/header";
+@import "components/preloader";
+@import "components/button";
+@import "components/home";
+@import "components/about";
